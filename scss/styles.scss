@@ -667,7 +667,7 @@ background-color: $binaryColor1;
 /* CONTAINERS */
 /* */
  
-#fale_container{
+#fale_full_container{
 @include span(full);
 background-color: $binaryColor1;
 height: auto;
@@ -709,6 +709,12 @@ color: $binaryColor0;
 transform: scale(1.1);
 transition: scale 1s;}*/
  
+#fale_container{
+	position: relative;
+	height: auto;
+	width: 100%;
+} 
+ 
 .fale_heading{
 position: relative;
 display: block;
@@ -716,18 +722,16 @@ display: block;
 @include push(2);
 color: $binaryColor1;
 font-size: 3em;
-clear: right;
 z-index: 10;
 }
 
+
+//the vertical text//
 #fale, #que, #nem, #um{
 	z-index: 9;
 }
 
-#fale{
-	;
-}
-
+//these are white text-boxes behind the letters//
 #fale:after{
 	content: '';
 	z-index: -1;
@@ -738,11 +742,6 @@ z-index: 10;
 	left: 13.334%;
 	min-width: 4em;
 }
-
-#que{
-	;
-}
-
 #que:after{
 	content: '';
 	z-index: -1;
@@ -752,9 +751,6 @@ z-index: 10;
 	width: 9.1%;
 	left: 13.334%;
 	min-width: 6em;
-}
-#nem{
-	;
 }
 #nem:after{
 	content: '';
@@ -766,9 +762,6 @@ z-index: 10;
 	left: 13.334%;
 	min-width: 4em;
 	
-}
-#um{
-	;
 }
 #um:after{
 	content: '';
@@ -782,7 +775,9 @@ z-index: 10;
 }
 
 
-#fale_textbox_container, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3,{
+//the containers for the text//
+#fale_textbox_container, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3{
+display: block;
 position: relative;
 @include span(full);
 height: auto;
@@ -791,10 +786,12 @@ height: auto;
 background-color: $binaryColor1;	
 z-index: 0;
 }
-#fale_textbox_1, #fale_textbox_2, #fale_textbox_3,{
-top: 0;
+#fale_textbox_1, #fale_textbox_2, #fale_textbox_3{
+padding: 2%;
+top:-42%;
 z-index: 2;
 }
+
 #fale_textbox_1{
 height: 100px;
 background-color: $binaryColor0;
@@ -808,12 +805,12 @@ height: 80px;
 background-color: $greyColor1;
 }
  
- 
+//text// 
 #fale_heading_2, #fale_subheading_1, #fale_subheading_2{
 position: absolute;
 z-index: 4;
 @include span(2);
-@include push(2.3);
+@include push(4.3);
 color: $binaryColor1;
 }
 #fale_heading_2{
