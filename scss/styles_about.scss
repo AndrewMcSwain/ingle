@@ -1,0 +1,100 @@
+@import "susy";
+@import "normalize";
+
+$susy:(
+columns:14,
+gutters: 1/6,
+debug:( image:show,
+output: overlay)
+)
+;
+
+$binaryColor0: white;
+$binaryColor1: black;
+
+.grid{
+@include container();
+margin-top:-16px;
+}
+
+html{
+font-family: 'nimbus_sans_lregular';
+font-size: 14px;
+}
+
+nav{
+@include push(2);
+margin-bottom: none;
+margin-top:-16px;
+}
+
+
+body{
+;}
+
+h1{
+display: block;
+font-size: 4rem;
+line-height: 1.3rem;
+}
+
+h2{
+font-size: 1.5rem;
+line-height: 1.3rem;
+}
+
+p{
+font-size: 1rem;
+}
+
+a{
+font-size: .75rem;
+}
+
+li{
+list-style: none;
+display: inline-block;
+padding-right: 1rem;
+}
+
+.navbar{
+text-decoration: none;
+color: $binaryColor0;
+background: $binaryColor1;
+}
+
+.textcontainer{
+@include push(2);
+@include span(6);
+}
+
+#heading{
+;}
+
+.textcontainer, #portrait{
+padding-top: 5rem;
+}
+
+#text{
+float:left;
+display:inline-block;
+}
+
+#portrait{
+/*background-image: url('images/portrait_full.jpg');
+background-position: 10% 1%;
+background-repeat: no-repeat;*/
+display:inline-block;
+float: right;
+clear:right;
+@include span(6 last);
+}
+
+
+.frame_space{
+@include span(full);
+height:10rem;
+background-color: black;
+}
+
+

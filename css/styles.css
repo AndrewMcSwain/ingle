@@ -429,10 +429,18 @@ h2 {
 p {
   margin: 0; }
 
-.penis_breath {
-  opacity: 1; }
+li {
+  font-size: 2em;
+  list-style: none;
+  display: inline-block;
+  padding-right: 1%; }
 
-#grid {
+nav {
+  margin-left: 17.33449%;
+  margin-bottom: none;
+  margin-top: -16px; }
+
+.grid {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -441,7 +449,7 @@ p {
   background-origin: content-box;
   background-clip: content-box;
   background-position: left top; }
-  #grid:after {
+  .grid:after {
     content: " ";
     display: block;
     clear: both; }
@@ -463,9 +471,9 @@ p {
   head:hover {
     background: rgba(255, 255, 255, 0.5);
     color: red; }
-  head:hover ~ #grid, head:hover ~ body #grid {
+  head:hover ~ .grid, head:hover ~ body .grid {
     position: relative; }
-    head:hover ~ #grid:before, head:hover ~ body #grid:before {
+    head:hover ~ .grid:before, head:hover ~ body .grid:before {
       position: absolute;
       top: 0;
       left: 0;
@@ -479,16 +487,22 @@ p {
       background-clip: content-box;
       background-position: left top; }
 
-/* */
+.navbar {
+  text-decoration: none;
+  color: white;
+  background: black; }
+
+/*             */
 /* CONTAINERS */
-/* */
+/*            */
 #main_background_container {
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  height: 1000px;
-  float: right; }
+  height: auto;
+  float: right;
+  margin-top: -16px; }
 
 #main_side_img {
   height: 65%;

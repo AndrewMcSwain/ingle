@@ -128,25 +128,38 @@ h2{margin:0;
 p{margin: 0;
 }
 
-.penis_breath{
-	opacity: 1;
+li{font-size:2em;
+list-style:none;
+display: inline-block;
+padding-right: 1%;
 }
 
-#grid{
+
+nav{@include push(2.6);
+	margin-bottom: none;
+margin-top:-16px;}
+
+.grid{
 @include container(15);
 @include background-grid;
 }
+.navbar{
+text-decoration: none;
+color: $binaryColor0;
+background: $binaryColor1;
+}
  
-/* */
+/*             */
 /* CONTAINERS */
-/* */
+/*            */
  
 #main_background_container{
 @extend %debug;
 @include span(15);
-height:1000px;
+height: auto;
 float: right;
-;}
+margin-top:-16px;
+}
 
 #main_side_img{
 height: 65%;	
