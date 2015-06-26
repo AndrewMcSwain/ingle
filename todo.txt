@@ -1,0 +1,8 @@
+Things that Need to Be Finished
+
+1. Add breakpoints to index.html and about.htm
+	about.html
+	*portrait image needs to fall below the headline or disappear
+	*
+
+

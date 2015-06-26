@@ -48,7 +48,7 @@ background-color: $binaryColor0;
 	height: 55.7px;
 	width: 100%;
 	margin-bottom:1%;
-
+	margin-right:500%;
 }
 .highlightOffset{
 background-color: $offsetColor;
@@ -723,9 +723,10 @@ transform: scale(1.1);
 transition: scale 1s;}*/
  
 #fale_container{
-	position: relative;
+	position: absolute;
 	height: auto;
 	width: 100%;
+        min-height:350px;
 } 
  
 .fale_heading{
@@ -789,54 +790,46 @@ z-index: 10;
 
 
 //the containers for the text//
-#fale_textbox_container, #fale_textbox_1, #fale_textbox_2, #fale_textbox_3{
+#fale_textbox_1, #fale_textbox_2, #fale_textbox_3{
 display: block;
 position: relative;
 @include span(full);
 height: auto;
 }
+
 #fale_textbox_container{
 background-color: $binaryColor1;	
 z-index: 0;
+margin-top:10%;
 }
+
 #fale_textbox_1, #fale_textbox_2, #fale_textbox_3{
-padding: 2%;
-top:-42%;
+height:auto;
+padding: 1%;
 z-index: 2;
 }
 
 #fale_textbox_1{
-height: 100px;
 background-color: $binaryColor0;
 }
 #fale_textbox_2{	
-height: 60px;
 background-color: $offsetColor1Dark;
 }
 #fale_textbox_3{
-height: 80px;
 background-color: $greyColor1;
 }
  
 //text// 
 #fale_heading_2, #fale_subheading_1, #fale_subheading_2{
-position: absolute;
 z-index: 4;
 @include span(2);
 @include push(4.3);
 color: $binaryColor1;
 }
-#fale_heading_2{
-	top: 10;
-}
+
 #fale_subheading_1{
 	font-size: 4em;
-	top: 10;
-}
-#fale_subheading_2{
-	top: 10;
-}
- 
+} 
  
  
  
@@ -850,7 +843,7 @@ color: offsetColor1;
 /*#CTA_middle_button_effect{
 color: $binaryColor1;
 }*/
- 
+
 %fale-melhor-alignment{
 @include span(6);
 @include push(2);
