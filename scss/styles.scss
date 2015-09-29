@@ -193,7 +193,7 @@ background-image: url(../images/background-4.png);
 //background-size: 80% 100%;
 //background-repeat: no-repeat;
 @include span(1 last);	
-@include cf;
+//@include cf;
 height: 91.2%;
 }
 
@@ -254,7 +254,7 @@ position: relative;
 float: left;
 background-color: $binaryColor1;
 @include span(5 no-gutter);
-height: 19.2%;
+height: 20%;
 }
 
 #main_heading_container{
@@ -393,7 +393,7 @@ margin-bottom: 0;
 
 #CTA_text_box{
 position:relative;
-@include span(1);
+@include span(3);
 background-color: $binaryColor0;
 min-height: 17%;
 }
@@ -455,15 +455,15 @@ max-width: 90%;
 } 
 
 #CTA_top_text{	
-//@include push(6 of 15);
-@include span(1);
+//@include push(2);
+@include span(8);
 display:inline-block;
-position: absolute;
+position: relative;
 z-index: 10;
 top: 4%;
 color: $binaryColor0;
 text-align: right;
-font-size: 4px;
+//font-size: 2em;
 }
 #CTA_top_button_text{
 position: absolute;

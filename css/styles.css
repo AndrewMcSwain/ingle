@@ -521,10 +521,6 @@ nav {
   float: right;
   margin-right: 0;
   height: 91.2%; }
-  #main_border_container:after {
-    content: "";
-    display: block;
-    clear: both; }
 
 #info_container {
   position: relative;
@@ -578,7 +574,7 @@ nav {
   background-color: black;
   width: 62.06897%;
   float: left;
-  height: 19.2%; }
+  height: 20%; }
 
 #main_heading_container {
   position: relative;
@@ -700,7 +696,7 @@ border-bottom: none;
 
 #CTA_text_box {
   position: relative;
-  width: 11.49425%;
+  width: 36.78161%;
   float: left;
   margin-right: 1.14943%;
   background-color: white;
@@ -752,16 +748,16 @@ border-bottom: none;
   padding-left: 4.95%; }
 
 #CTA_top_text {
-  width: 11.49425%;
+  width: 100%;
   float: left;
-  margin-right: 1.14943%;
+  margin-left: 0;
+  margin-right: 0;
   display: inline-block;
-  position: absolute;
+  position: relative;
   z-index: 10;
   top: 4%;
   color: white;
-  text-align: right;
-  font-size: 4px; }
+  text-align: right; }
 
 #CTA_top_button_text {
   position: absolute;
