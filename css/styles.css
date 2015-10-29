@@ -520,7 +520,7 @@ nav {
   width: 11.49425%;
   float: right;
   margin-right: 0;
-  height: 91.2%; }
+  height: 120%; }
 
 #info_container {
   position: relative;
@@ -545,7 +545,7 @@ nav {
   width: 100%; }
 
 #info_time_container {
-  margin-top: 2%;
+  margin-top: -1%;
   margin-bottom: 2%;
   display: inline-block;
   text-align: center;
@@ -572,8 +572,9 @@ nav {
   position: relative;
   float: left;
   background-color: black;
-  width: 62.06897%;
+  width: 63.21839%;
   float: left;
+  margin-right: 1.13636%;
   height: 20%; }
 
 #main_heading_container {
@@ -667,19 +668,19 @@ nav {
   left: 16%;
   top: 60%; }
 
-/*#info_box_1{
-position: absolute;
-z-index: 0;
-width:99%;
-top: 0;
-height: 80%;
-background-color: #000000;
--webkit-filter: opacity(34%);
-filter: opacity(34%);
-border: 5px solid rgb(0, 255, 0);
-border: 5px solid rgba(255, 255, 255, 1);
-border-bottom: none;
-}*/
+#info_box_1 {
+  position: absolute;
+  z-index: 0;
+  width: 99%;
+  top: 0;
+  height: 80%;
+  background-color: #000000;
+  -webkit-filter: opacity(34%);
+  filter: opacity(34%);
+  border: 5px solid lime;
+  border: 5px solid white;
+  border-bottom: none; }
+
 #main_sidebar_box {
   position: absolute;
   height: 80%;
@@ -695,22 +696,27 @@ border-bottom: none;
   margin-bottom: 0; }
 
 #CTA_text_box {
-  position: relative;
-  width: 36.78161%;
+  width: 11.49425%;
   float: left;
   margin-right: 1.14943%;
+  height: 20%;
+  position: relative;
   background-color: white;
   min-height: 17%; }
+  #CTA_text_box:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 #CTA_textbox_abs {
   position: absolute;
   z-index: 3;
-  top: -20%;
-  left: -41%;
-  height: 140%;
-  width: 233%;
+  top: -40%;
+  left: -23%;
+  height: 160%;
+  width: 245%;
   min-height: 28%;
-  background-color: white; }
+  background-color: #1a6c55; }
 
 /* */
 /* IMAGES */
@@ -719,7 +725,8 @@ border-bottom: none;
   padding: 2%;
   max-width: 92%;
   transform: translate(2%);
-  transition: all .5s; }
+  transition: all .5s;
+  margin-top: -5%; }
 
 #portrait:hover {
   brightness: 3;
@@ -745,7 +752,14 @@ border-bottom: none;
 
 #main_sidebar_subheading2 {
   margin-top: -6.5%;
-  padding-left: 4.95%; }
+  padding-left: 4.95%;
+  position: relative;
+  z-index: 100; }
+
+#main_sidebar_text {
+  padding-top: 6%;
+  font-size: 28px;
+  text-align: center; }
 
 #CTA_top_text {
   width: 100%;
@@ -756,13 +770,15 @@ border-bottom: none;
   position: relative;
   z-index: 10;
   top: 4%;
+  white-space: nowrap;
   color: white;
   text-align: right; }
 
 #CTA_top_button_text {
-  position: absolute;
-  top: 50%;
-  text-align: center; }
+  top: 45%;
+  text-align: center;
+  position: relative;
+  font-size: 20px; }
 
 #aulas_container {
   background-position: center top;
@@ -779,7 +795,8 @@ border-bottom: none;
   margin-right: 0;
   height: 45%;
   position: relative;
-  background-image: url("http://i.imgur.com/6Tv6r7F.png"); }
+  background-image: url("../images/buildstrip.png");
+  background-size: cover; }
 
 #aulas_container_bottom {
   height: 55%;
@@ -787,7 +804,7 @@ border-bottom: none;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background-image: url("http://i.imgur.com/YfxsPWu.jpg"); }
+  background-image: url("../images/aulasbg.png"); }
 
 /* */
 /* TEXT */
@@ -1049,10 +1066,11 @@ transition: scale 1s;}*/
   width: 24.13793%;
   float: left;
   margin-right: 1.14943%;
-  margin-left: 25.28736%;
+  margin-left: 12.64368%;
   color: black;
   font-size: 3em;
-  z-index: 10; }
+  z-index: 10;
+  right: -1.5%; }
 
 #fale, #que, #nem, #um {
   z-index: 9; }
@@ -1120,7 +1138,7 @@ transition: scale 1s;}*/
   background-color: white; }
 
 #fale_textbox_2 {
-  height: 60px;
+  height: 460px;
   background-color: #7C1A1A; }
 
 #fale_textbox_3 {
@@ -1130,21 +1148,24 @@ transition: scale 1s;}*/
 #fale_heading_2, #fale_subheading_1, #fale_subheading_2 {
   position: absolute;
   z-index: 4;
-  width: 24.13793%;
+  width: 49.42529%;
   float: left;
   margin-right: 1.14943%;
-  margin-left: 54.36782%;
-  color: black; }
+  margin-left: 12.64368%;
+  color: black;
+  font-size: 46px; }
 
 #fale_heading_2 {
-  top: 10; }
+  top: 10;
+  font-size: 60px; }
 
 #fale_subheading_1 {
-  font-size: 4em;
-  top: 10; }
+  font-size: 15em;
+  top: -37%; }
 
-#fale_subheading_2 {
-  top: 10; }
+#fale_heading_m {
+  font-size: 60px;
+  position: relative; }
 
 /* */
 /* BUTTONS */
