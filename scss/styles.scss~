@@ -21,8 +21,6 @@
 $susy: (
 columns: 8,
 gutters:1/10,
-debug:(image: show,
-output : overlay,)
 )
 ;
  
@@ -38,6 +36,8 @@ $offsetColor2: #D81E9D;
 $greyColor1: #3F3C3C;
  
 $main: 75%;
+$sd:1px 1px 1px rgba(0,0,0,.8);
+$sf:1px 1px 1px rgba(255,255,255,.8);
 
 .highlight1{
 background-color: $binaryColor1;
@@ -127,8 +127,16 @@ right:50%;
 
 html{
 font-family: 'nimbus_sans_lregular';
+font-size: 62.5%;
+//overflow-x:hidden;
 }
- 
+
+/**{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
 h1{margin:0;
 }
 
@@ -178,7 +186,7 @@ height: 100%;
 
 #main_primary_container{
 //@extend %debug;
-@include span(4 wider no-gutter);
+@include span(4.75 wider no-gutter);
 background-image: url('../images/background-2b.png');
 background-position: top;
 background-size: cover;
@@ -192,9 +200,10 @@ background-image: url(../images/background-4.png);
 //background-position: -10%;
 //background-size: 80% 100%;
 //background-repeat: no-repeat;
-@include span(1 last);	
 //@include cf;
+width:2%;
 height:120%;
+float:right;
 }
 
 #info_container{
@@ -202,8 +211,7 @@ position: relative;
 z-index: 2;
 float: left;
 height: 100%;
-@include span(full)
-
+@include span(full);
 }
 
 #info_primary_container{
@@ -231,7 +239,6 @@ width: 100%;
 
 #info_startday_container{
 width: 100%;
-;
 }
  
 #portrait_frame_container{
@@ -244,7 +251,7 @@ max-width: 100%;
 position:relative;
 float: left;
 max-width: 100%;
-@include span(2 narrow);
+width:25.238%;
 background-color: $binaryColor0;
 min-height: 65%;
 }
@@ -266,9 +273,10 @@ width :100%;
 #main_heading{
 position: relative;
 text-align: right;
-padding-right: 15%;
-font-size: 600%;
+padding-right: 21%;
+font-size: 12rem;
 margin-bottom: 3px;
+text-shadow:1px 2px 1px rgba(10, 0, 200, 0.698), 2px 1px 1px rgba(255, 255, 255, 0.698), 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 #main_subheading_container{
@@ -282,20 +290,22 @@ font-size: 600%;
 position: relative;
 display: block;
 margin-top: -5%;
-font-size: 23%;
+font-size: 5rem;
 text-align: right;
 font-family:url('nimbus_sans_lreguital');
+text-shadow:$sf;
 }
 
 #info_text_place{
 position:relative;
-padding: 0;
-margin-bottom: 0;;
+padding-top: 22px;
+margin-bottom: 0;
 top: 5%;
 text-align: center;
 font-weight: bold;
 color: $binaryColor0;
-text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.298);
+font-size:30px;
 }
 
 #info_text_day{
@@ -307,6 +317,7 @@ font-weight:bold;
 top: 20%;
 z-index:1;
 font-size: 0.75em;	
+text-shadow:1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .info_text_time{
@@ -316,7 +327,8 @@ z-index: 5;
 display: inline-block;
 width: 50%;
 color: $binaryColor0;	
-font-size: 1.4em;
+font-size: 1.4em !important;
+font-weight: bold;
 }
 
 #info_text_time_1{;
@@ -339,7 +351,6 @@ position: relative;
 display: inline-block;
 text-align:center;
 width: 100%;
-
 z-index: 5;
 color: $binaryColor0;
 font-size: 3.8em;
@@ -431,9 +442,10 @@ transform: scale(1.06, 1.06);
 }
 #signature{
 position:absolute;
-top:52%;
-left:49%;
-max-width: 90%;
+top:62%;
+left:33%;
+max-width: 75%;
+
 }
  
 #info_box_gradient_1{;}
@@ -454,9 +466,10 @@ margin-top:5%;
 
 #main_sidebar_subheading2{
 margin-top: -6.5%;
-padding-left: 4.95%;
+padding-left: 1.95%;
 position: relative;
 z-index: 100;
+font-size:64px;
 } 
 
 #main_sidebar_text{
@@ -484,8 +497,6 @@ text-align: center;
 position:relative;
 font-size:20px;
 }
-
-
 
 #aulas_container{
 background-position: center top;
@@ -548,7 +559,6 @@ height: 1.2em;
 @include span(full);
 position:relative;
 z-index: 20;
-//font-size
 text-align: center;
 top: -1%;
 color: $binaryColor0;
@@ -566,25 +576,24 @@ display: inline-block;
 @include span(full);
 position: relative;
 z-index: 10;
-left: 30%;
+left: 0;
 bottom: 16.8%;
 margin-left: auto;
 margin-right: auto;
 font-size: 2.4em;
-/*text-align: center;
-vertical-align: bottom;*/
+text-align: center;
 color:$binaryColor1;
 }
 
 #aulas_subheading_2:before{
 content: '';
 position: absolute;
-bottom: 0%;
+bottom: -1%;
 z-index: -1;
-width:110%;
-margin-left: -38%;
+width:100%;
 height: 50%;
 background-color: $binaryColor0;
+left:0;
 }
 /*
 #aulas_subheading_2:after{
@@ -753,7 +762,9 @@ transition: scale 1s;}*/
 	position: relative;
 	height: auto;
 	width: 100%;
-} 
+overflow:hidden;
+}
+ 
  
 .fale_heading{
 position: relative;
@@ -823,6 +834,8 @@ position: relative;
 @include span(full);
 height: auto;
 }
+
+
 #fale_textbox_container{
 background-color: $binaryColor1;	
 z-index: 0;
@@ -833,6 +846,10 @@ top:-42%;
 z-index: 2;
 }
 
+#fale_textbox_0{
+padding-bottom:2%;
+padding-top:5%;
+}
 #fale_textbox_1{
 height: 100px;
 background-color: $binaryColor0;
@@ -845,9 +862,11 @@ background-color: $offsetColor1Dark;
 height: 80px;
 background-color: $greyColor1;
 }
+
  
 //text// 
-#fale_heading_2, #fale_subheading_1, #fale_subheading_2{
+#fale_heading_2, #fale_subheading_1 
+{
 position: absolute;
 z-index: 4;
 @include span(4);
@@ -857,20 +876,39 @@ font-size:46px;
 }
 #fale_heading_2{
 	top: 10;
-font-size:60px
+font-size:60px;
 }
 #fale_subheading_1{
 	font-size: 15em;
 	top: -37%;
+margin-left:8%;
 }
 #fale_subheading_2{
-;}
- 
- #fale_heading_m{
-font-size:60px;
+top:25%;
+left: -1%;
+font-size:191px;
+margin-left:0;
 position:relative;
 }
  
+ #fale_heading_m{
+font-size:90px;
+position:relative;
+text-align: center;
+top:19%;
+&:before{
+content:"";
+background-color:#893030;
+width:110%;
+height:120px;
+box-shadow:0px 20px 20px 0px rgba(0,0,0,1);
+display:inline-block;
+top: -23%;
+left: -10%;
+z-index:-4;
+position:absolute;
+}
+}
 /* */
 /* BUTTONS */
 /* */
@@ -884,7 +922,7 @@ color: $binaryColor1;
  
 %fale-melhor-alignment{
 @include span(6);
-@include push(2);
+@include push(1);
 }
 
 /******* FIFTH SECTION *******/
@@ -897,8 +935,8 @@ color: $binaryColor1;
 @include span(full);
 height: auto;
 background-color: $binaryColor1;
-padding-bottom: 4%;
-padding-top: 2%;
+padding-bottom: 6%;
+padding-top: 6%;
 }
  
 /* */
@@ -912,10 +950,14 @@ clear: right;
 background-color: $binaryColor1;
 }
 #melhor_subheading{
-@include span(full first);
-@include push(3.5);
+@include span(4);
+@include push(2);
 font-size: 7em;
 color: $binaryColor0;
+position: relative;
+margin-top:-1%;
+transform:scaleY(1.2);
+padding-bottom:5%
 }
  
  
@@ -937,43 +979,48 @@ background-color: $binaryColor1;
 #p_container{
 @extend %bg-image;
 height: 60%;
-background-image: url('../../../images/Grbqfj7.jpg');/*not showing image*/
+background-image: url("../images/Selection_028.png");/*not showing image*/
+background-position: 0 0;
 }
 
 #conquistar_heading{
 color: $binaryColor0;
-@include push(2)
+margin-left:7.287%;
+font-size: 3em;
 }
 #conquistar_subheading {
 position: relative;
 z-index: 1;
-font-size: 3em;
+font-size: 5em;
 color: $binaryColor1;
-padding-bottom: 1%;
-@include push(2)
+padding-bottom: 5%;
+margin-left: 12.287%;
 }
+
 #conquistar_subheading:before{
 content: '';
 position: absolute;
 z-index: -1;
 background-color: $binaryColor0;
-width: 40%;
+width: 150%;
 height: 1.2em;
 top: 2%;
+left:-50%;
 }
+
 #final_container{
 @include span(full);
 height: auto;
 background-color: $binaryColor0;
 }
+
 #final_form_container{
 position: relative;
 background-color: white;
-@include span(6 of 15);
-@include push(4);
+@include span(3);
+@include push(2);
 padding: 1.5% 2%;
 margin-top: -2%;
-
 }
  
  
@@ -982,10 +1029,12 @@ margin-top: -2%;
 /* */
 
 #conquistar_text{
+text-align:center;
 	display: inline-block;
 	font-size: 3.6em;
-	@include push(2.2);
-	padding-top: 10%;
+	padding-top: 18%;
+padding-left:18%;
+font-weight:bold;
 }
  
 #final_heading_band{
@@ -994,10 +1043,10 @@ height: auto;
 }
  
 #final_heading{
-@include push(3.5);
+text-align:center;
 font-size: 2.5em;
 color: $binaryColor0;
-padding-top: 2%;
+padding-top: 5%;
 padding-bottom: 5%;
 } 
 
