@@ -148,7 +148,7 @@ $('#info_text_time_1').fitText();
 $('#info_text_time_2').fitText();
 $('#info_text_startday_explain').fitText();
 $('#info_text_startday').fitText(.7);
-$('#CTA_top_text').fitText(1.25);
+//$('#CTA_top_text').fitText(1.25);
 $('main_sidebar_text').fitText();
 //$('main_sidebar_subheading').fitText();
 //$('aulas_heading_1').fitText();
