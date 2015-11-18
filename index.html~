@@ -62,16 +62,23 @@
 </section>
 <section id="aulas_container">
 <div id="aulas_container_top">
-<h1 id="aulas_heading_1"><span class="highlight1">Aulas de Inglês</span></h1>
+<!--<h1 id="aulas_heading_1"><span class="highlight1">Aulas</span></h1>
 <div id="aulas_band_back"></div>
-<h2 id="aulas_subheading_1">Práticas Imersivas</h2>
+<h2 id="aulas_subheading_1">Práticas Imersivas</h2>//-->
 <!--<div id="aulas_heading_band_1"></div>//-->
+<h1 id="aulas_heading_2">Aulas</h1>
 </div>
 <div id="aulas_container_bottom">
-<h1 id="aulas_heading_2">Aulas</h1>
 <h2 id="aulas_subheading_2"><span class="highlight0">com Professores Nativos</span></h2>
 <!--<div id="aulas_subheading_band">a</div>//-->
 </div>
+</section>
+<!--<section id="professores_container"> 
+<div id="prof_grid">
+    <div class="prof" id="P1"></div>
+    <div class="prof" id="P2"></div>
+    <div class="prof" id="P3"></div>
+</div>//-->
 </section>
 <section id="aprende_container">
 <div id="aprende_divider"></div>	
